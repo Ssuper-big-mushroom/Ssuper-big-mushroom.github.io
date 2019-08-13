@@ -1,38 +1,75 @@
 body{
     margin:0;
     padding: 0;
-    background-image: url(../img/constructive_bg_01.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color:RGB(255,245,225)
 
+}
+ul,li{
+    margin:0px;
+    padding:0px;
+}
+div{
+    border-radius: 4px;
 }
 .box{
     width:100%;
     height:100vh;
 }
 .box-header{
-    width:100%;
+    width:80%;
     height:100px;
     background: #fff;
-    opacity: 0.1;
     position: fixed;
     top:0px;
+    left:10%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    z-index: 5;
 }
 .box-left{
     width:200px;
     height:600px;
     position: fixed;
     left:60px;
-    top:100px;
+    top:120px;
     background: #fff;
-    opacity: 0.1;
 }
 .box-content{
     width:70%;
     height:1000px;
     background: #fff;
-    opacity: 0.1;
-    margin-top:130px;
-    margin-left:300px;
-    box-shadow: #999999;
+    margin-top:110px;
+    margin-left:270px;
+    background-color:#CCFFFF;
+    opacity: 0.5;
+}
+li{
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+}
+li:hover{
+    background:#999;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    box-shadow: rgb(26, 25, 25);
+}
+.box-left > ul{
+    padding:20px;
+    text-align: center;
+}
+.box-left > ul > li{
+    margin-top:10px;
+    display: block;
+    border-radius:4px;
+}
+.active{
+    background-color:#999999;
 }
